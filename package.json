@@ -2,10 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "a backend at chai aur code channel - youtube",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "javascript",
@@ -13,5 +13,16 @@
     "chai"
   ],
   "author": "kayitha jyothirmai",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.0"
+  }
 }
